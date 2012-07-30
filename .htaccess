@@ -1,0 +1,4 @@
+# Esto se hace para que apache entienda .webm
+# Agregamos el MIME Type del lado del server
+AddType video/webm .webm
+AddType video/mp4 .mp4

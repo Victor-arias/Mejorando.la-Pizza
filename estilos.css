@@ -1,3 +1,12 @@
+@font-face
+{
+    font-family: "Freddito";
+    src: url("KomikaTitle-webfont.eot");
+    src: url("KomikaTitle-webfont.eot?#iefix") format("embedded-opentype"),
+         url("KomikaTitle-webfont.woff") format("woff"),
+         url("KomikaTitle-webfont.ttf") format("truetype"),
+         url("KomikaTitle-webfont.svg#KomikaTitleRegular") format("svg");
+}
 body
 {
     background: #800;
@@ -21,7 +30,8 @@ header
 }
 header h1
 {
-    font-size: 2em;
+    font-family: "Freddito";
+    font-size: 2.5em;
     text-shadow: rgba(255, 255, 255, 0.5) 2px 2px 10px;
 }
 #formulario
@@ -79,4 +89,71 @@ header h1
 #historia p:first-child
 {
     margin-top: 0.5em;
+}
+#pizzamaker
+{
+    background: #721B00;
+    box-shadow: #000 0px 5px 30px inset;
+    display: none;
+    margin: 0;
+    padding: 0.2em;
+    width: 100%;
+}
+#pizzamaker section
+{
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+#pizzamaker #ingredientes
+{
+    margin: 1%;
+    padding: 0%;
+    width: 68%;
+}
+#pizzamaker #ingredientes article
+{
+    background: #D88B00;
+    border-radius: 0.3em;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.9em;
+    height: 280px;
+    margin: 1.5% 0 1% 2%;
+    padding: 0;
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    vertical-align: top;
+    width: 29%;
+}
+#pizzamaker #ingredientes article:hover
+{
+    background: #000 !important;
+    transform: scale(1.2) rotate(-365deg);
+    -webkit-transform: scale(1.2) rotate(-365deg);
+}
+#pizzamaker #ingredientes article:nth-child(even)
+{
+    background: #AC2800;
+}
+#pizzamaker #pizza
+{
+    margin: 1% 0;
+    width: 24%;
+}
+@media screen and (max-width: 960px)
+{
+    #historia
+    {
+        column-count: 2;
+    }
+    #pizzamaker section
+    {
+        width: 45%;
+    }
+    #pizzamaker #ingredientes article
+    {
+        width: 90% !important;
+    }
 }
